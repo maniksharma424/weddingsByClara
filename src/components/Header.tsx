@@ -32,11 +32,11 @@ const Header = () => {
   ];
   const router = useRouter();
   return (
-    <div className="w-full flex justify-end items-center gap-2">
+    <div className="w-full flex justify-end items-center sm:gap-4 text-lg ">
       {LINKS?.map((link) => {
         return (
           <li
-            className="  list-none"
+            className={`list-none text-gray-500 hover:text-black`}
             onClick={() => {
               router.push(link.url);
             }}
