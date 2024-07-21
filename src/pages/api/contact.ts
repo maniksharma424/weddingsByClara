@@ -13,14 +13,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: "ypu670633@gmail.com",
-        pass: "yoahhdbppadpxjxa"
+        user: "one_email_id",
+        pass: "password_of_that_id"
       }
     });
 
     const mailOptions = {
       from: email,
-      to: 'a.k.orton.ako@gmail.com',
+      to: 'business_mail_id',
       subject: 'New Contact Form Submission',
       text: `
         First Name: ${firstName}
